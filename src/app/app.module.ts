@@ -7,16 +7,11 @@ import { InsertTaskComponent } from './insert-task/insert-task.component';
 import { TasksListComponent } from './tasks-list/tasks-list.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    InsertTaskComponent,
-    TasksListComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, InsertTaskComponent, TasksListComponent],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {
+  tasks_list: Array<object> = [];
+}
